@@ -1,0 +1,93 @@
+body {
+    background: #263238;
+    font-size: 1.2rem;
+}
+
+.backdrop-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    
+    overflow: hidden;
+}
+
+.backdrop {
+    background-image: url('img/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+        
+    filter: blur(1px);
+    transform: scale(1.1);
+    
+    width: 100%;
+    height: 100%;
+    
+    opacity: 0.8;
+}
+
+.top-region {
+    padding-top: 6vh;
+    
+    height: 60vh;
+    min-height: 450px;
+}
+
+.bottom-region {
+    padding-top: 2vh;
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 10vh;
+    min-height: 120px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo-art {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    overflow: hidden;
+}
+
+.logo h1 {
+    font-family: "Segoe UI";
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.logo h1 .second {
+    font-size: 80%;
+    opacity: 0.8;
+}
+
+.text-shadow {
+    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5)
+}
+
+.twitter, .discord, .patreon {
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+.twitter:hover , .discord:hover , .patreon:hover  {
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+.twitter, .twitter:hover {
+    color: #1DA1F2;
+}
+.discord, .discord:hover {
+    color: #7289DA;
+}
+.patreon, .patreon:hover {
+    color: #F96854;
+}
